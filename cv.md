@@ -3,6 +3,7 @@
 ## Contacts:
 
 **phone:** [+375259337226](tel:+375259337226)
+
 **email:** [dashka.ostrikova@gmail.com](mailto:dashka.ostrikova@gmail.com)
 
 ## Brief information about me:
@@ -20,11 +21,13 @@ I am hard-working, assiduous, attentive to details. I am ready to develop and le
 ## Code examples:
 
 [COVID-19](https://github.com/DashaOstrikova/COVID-19) - My test project informing about the coronavirus
+
 [MW](https://github.com/DashaOstrikova/MW) - My first project
 
 ## Education:
 
 **University:** [GOMEL STATE UNIVERSITY named FRANCISK SKORINA](https://gsu.by/en)
+
 **Faculty:** [Faculty of Mathematics and Technologies of Programming](http://math.gsu.by/en/chair-of-mathematical-issues-of-management-and-informatics/)
 
 ## Languages:
