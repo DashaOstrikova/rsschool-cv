@@ -53,7 +53,7 @@ ul {
 .header {
     align-items: center;
 }
-.header-left-box {
+.header .left-box {
     padding: 50px;
     display: flex;
     justify-content: center;
@@ -61,27 +61,25 @@ ul {
 .photo-box {
     position: relative;
 }
+.photo-box::before, .photo-box::after {
+    content: '';
+    position: absolute;
+    width: 265px;
+    height: 327px;
+    border: 3px solid var(--text-color);
+}
+.photo-box::before {
+    top: -20px;
+    left: -20px;
+}
+.photo-box::after {
+    bottom: -20px;
+    right: -20px;
+}
 .photo {
     width: 265px;
     position: relative;
     z-index: 1;
-}
-.border-photo{
-    width: 265px;
-    height: 327px;
-    border: 2px solid var(--text-color);
-}
-.border-photo-top, .border-photo-bottom {
-    position: absolute;
-    z-index: 0;
-}
-.border-photo-top{
-    top: -20px;
-    left: -20px;
-}
-.border-photo-bottom{
-    bottom: -20px;
-    right: -20px;
 }
 
 .header-right-box {
@@ -89,11 +87,37 @@ ul {
     justify-content: flex-end;
 }
 .full-name {
+    position: relative;
+    z-index: 1;
     padding: 0 140px 0 20px;
     font-family: 'Acme', sans-serif;
     font-size: 65px;
     color:  var(--main-color);
     text-transform: capitalize;
+}
+.position{
+    position: relative;
+    padding-left:119px;
+    margin: 16px 0;
+    font-family: 'Acme', sans-serif;
+    font-size: 25px;
+    color: var(--text-color);
+    text-transform: uppercase;
+}
+.position::before, .position::after {
+    content: '';
+    position: absolute;
+    width: 299px;
+    height: 52px;
+    border: 3px solid var(--text-color);
+}
+.position::before {
+    top: -22px;
+    left: 83px;
+}
+.position::after {
+    bottom: -18px;
+    left: 98px;
 }
 /*  /Header */
 
@@ -126,6 +150,7 @@ ul {
 .icon{
     width: 18px;
     margin-right: 10px;
+    fill:white;
 }
 
 .skill-level {
@@ -194,6 +219,15 @@ ul {
         padding: 0 50px 0 20px;
         font-size: 60px;
     }
+    .position{
+        font-size: 24px;
+    }
+    .position::before{
+        left: 76px;
+    }
+    .position::after{
+        left: 91px;
+    }
     .left-box{
         width: 380px;
     }
@@ -208,6 +242,9 @@ ul {
     }
 }
 @media (max-width: 880px) {
+    .container{
+        margin: 0;
+    }
     .box-container {
         display: block;
     }
@@ -215,30 +252,35 @@ ul {
         width: 100%;
         background-color: white;
     }
-
     .left-box, .right-box {
         margin-bottom: 20px;
     }
-    .header-left-box{
-        display: flex;
-        justify-content: center;
-    }
     .header{
-        display: flex;
-        flex-flow: column-reverse;
         align-items: baseline;
     }
     .header .right-box {
         margin-top: 30px;
         margin-bottom: 0;
     }
-    .column-reverse-mobile {
-        display: flex;
-        flex-flow: column-reverse;
-    }
-    
     .full-name{
         font-size: 50px;
+    }
+    .position{
+        font-size: 20px;
+        padding-left: 77px;
+        margin: 14px 0;
+    }
+    .position::before, .position::after{
+        width: 220px;
+        height: 42px;
+    }
+    .position::before{
+        top: -20px;
+        left: 56px;
+    }
+    .position::after{
+        left: 68px;
+        bottom: -16px;
     }
     .mobile-box{
         display: flex;
@@ -252,6 +294,15 @@ ul {
         flex-direction: column;
         align-items: center;
     }
+    .column-reverse-mobile {
+        display: flex;
+        flex-flow: column-reverse;
+    }
+
+    .mobile-icon{
+        fill: var(--text-color);
+        margin-right: 5px;
+    }
 
     .skills {
         width: 80%;
@@ -261,15 +312,11 @@ ul {
     .footer .left-box {
         display: none;
     }
-
+    .footer .right-box{
+        margin-bottom: 0;
+    }
     .footer-line {
         margin-left: 0;
-    }
-    .container{
-        margin: 0 auto;
-    }
-    .footer-right-box{
-        margin-bottom: 0;
     }
 }
 @media (max-width: 505px) {
@@ -279,11 +326,21 @@ ul {
     .full-name{
         font-size: 45px;
     }
+    .position {
+        font-size: 18px;
+        padding-left: 86px;
+        margin: 14px 0;
+    }
 }
 @media (max-width: 400px) {
     .full-name{
         font-size: 40px;
         padding: 0 30px 0 20px;
+    }
+    .content-list-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .rsschool{
         width: 80px;
