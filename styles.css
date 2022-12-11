@@ -28,14 +28,14 @@ ul {
     max-width: 1200px;
     margin: 30px auto;
     background-color: white;
-    box-shadow: 16px 10px 30px rgb(0 0 0 / 30%);  
+    box-shadow: 16px 10px 30px rgb(0 0 0 / 30%);
 }
 .box-container {
     display: flex;
 }
 .left-box {
-    width: 420px;
-    flex: 0 0 420px;
+    width: 435px;
+    flex: 0 0 435px;
     background-color: var(--main-color);
 }
 .right-box {
@@ -175,7 +175,7 @@ ul {
     position: relative;
     margin-bottom: 10px;
     font-family: 'Merriweather', serif;
-    font-size: 18px;
+    font-size: 16px;
 }
 .icon{
     width: 18px;
@@ -242,17 +242,8 @@ ul {
 .code__title {
     color: #dccd79;
 }
-.code__const {
-    color: #33b4ff;
-}
 .code__parameter {
     color: #4fb4c5;
-}
-.code__string {
-    color: #ffaa7e;
-}
-.code__number {
-    color: #a7ce9b;
 }
 /* /Main */
 
@@ -313,7 +304,7 @@ ul {
         width: 380px;
     }
     .content-list-text{
-        font-size: 16px;
+        font-size: 15px;
     }
     .content-text{
         font-size: 18px;
@@ -369,7 +360,7 @@ ul {
         flex-direction: column;
         align-items: flex-end;
     }
-    .mobile-box .list-contacts, 
+    .mobile-box .list-contacts,
     .mobile-box .language {
         width: 100%;
         display: flex;
