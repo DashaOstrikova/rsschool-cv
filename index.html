@@ -105,7 +105,7 @@
                         <code class="code">
         <span class="code__keyword">function</span> <span class="code__title">cache</span>(<span class="code__parameter">func</span>) {
             <span class="code__keyword">let</span> <span class="code__title">result</span> = <span>{}</span>;
-            <span class="code__return">return</span> (...<span class="code__title">args</span>) => {
+            <span class="code__return">return</span> (...<span class="code__title">args</span>) =&gt; {
                     <span class="code__keyword">const</span> <span class="code__title">key</span> =  JSON.<span class="code__parameter">stringify</span>(<span class="code__parameter">args</span>);
                     <span class="code__keyword">if</span>(!<span class="code__parameter">result</span>.<span class="code__parameter">hasOwnProperty</span>(<span class="code__parameter">key</span>)) {
                         <span class="code__parameter">result</span>[<span class="code__parameter">key</span>] = <span class="code__parameter">func</span>(...<span class="code__parameter">args</span>);
