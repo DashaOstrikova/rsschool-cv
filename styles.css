@@ -194,7 +194,7 @@ ul {
     left: 0;
     height: 8px;
     width: 100%;
-    background: #d4d4d4;
+    background: #e2dede;
 }
 .skill-level::before {
     background: var(--text-color);
@@ -322,6 +322,7 @@ ul {
     }
     .left-box{
         width: 100%;
+        flex: 0 0 0;
         background-color: white;
     }
     .left-box, .right-box {
